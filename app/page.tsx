@@ -135,7 +135,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/90 backdrop-blur-md border-b border-slate-100 py-3 shadow-sm' : 'bg-transparent py-5'
+      scrolled ? 'bg-white backdrop-blur-md border-b border-slate-100 py-3 shadow-sm' : 'bg-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -185,7 +185,7 @@ const Hero = () => {
           <AnimatedSection>
             {/* Metin renkleri beyaz olarak düzeltildi */}
             <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-              Kişisel <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">okuma</span> ve düşünme alanın.
+              Kişisel <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/90">okuma</span> ve düşünme alanın.
             </h1>
             <p className="text-lg md:text-xl text-violet-100 mb-10 max-w-2xl mx-auto">
               Kitaplarınızı takip edin, okuma alışkanlıklarınızı analiz edin ve önemli anlarınızı saniyeler içinde kaydedin.
@@ -275,7 +275,7 @@ const Features = () => {
     },
     {
       title: 'Oturumlarınızın zamanını kolayca tutun',
-      description: 'Dahili kronometre ile okuma seanslarınızı planlayın ve serbest mod ile odaklanın.',
+      description: 'Dahili kronometre ile okuma seanslarınızı planlayın ve odaklanın.',
       bgColor: 'bg-teal-500',
       titleColor: 'text-white', // Yeşil üstünde beyaz mükemmel okunur
       descColor: 'text-teal-50',
