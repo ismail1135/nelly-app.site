@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL+Guides&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-geist-sans: 'Quicksand', sans-serif;
 }
 
 @theme inline {
