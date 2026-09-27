@@ -71,8 +71,10 @@ const TikTok = ({ size = 24, className = "" }) => (
 );
 
 
-const useElementOnScreen = (options) => {
-  const containerRef = useRef(null);
+// 1. DÜZELTME: options parametresine tip eklendi
+const useElementOnScreen = (options: IntersectionObserverInit): [React.RefObject<HTMLDivElement | null>, boolean] => {
+  // 3. DÜZELTME: useRef için tip belirtildi
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -98,7 +100,8 @@ const useElementOnScreen = (options) => {
   return [containerRef, isVisible];
 };
 
-const AnimatedSection = ({ children, className = '', delay = 0 }) => {
+// 2. DÜZELTME: children prop'una tip eklendi
+const AnimatedSection = ({ children, className = '', delay = 0 }: { children: React.ReactNode, className?: string, delay?: number }) => {
   const [ref, isVisible] = useElementOnScreen({
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px"
@@ -211,8 +214,12 @@ const Hero = () => {
                 alt="Uygulama Arayüzü Ana Ekran" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
+                  // 4. DÜZELTME: Type Casting (HTMLElement)
+                  const target = e.target as HTMLElement;
+                  target.style.display = 'none';
+                  if (target.nextSibling) {
+                    (target.nextSibling as HTMLElement).style.display = 'flex';
+                  }
                 }}
               />
                <div className="hidden absolute inset-0 flex-col bg-white">
@@ -255,7 +262,7 @@ const Features = () => {
       bgColor: 'bg-pink-300',
       titleColor: 'text-black', // Mavi üstünde beyaz mükemmel okunur
       descColor: 'text-black/80',
-      image: '/assets/images/screens/frame3.jpg'
+      image: '/assets/images/screens/frame4.jpg'
     },
     {
       title: 'Anılarınızı asla kaybetmeyin',
@@ -263,7 +270,7 @@ const Features = () => {
       bgColor: 'bg-cyan-500',
       titleColor: 'text-white', // Gül rengi üstünde beyaz mükemmel okunur
       descColor: 'text-indigo-50',
-      image: '/assets/images/screens/frame4.jpg'
+      image: '/assets/images/screens/frame5.jpg'
     },
     {
       title: 'Oturumlarınızın zamanını kolayca tutun',
@@ -271,7 +278,7 @@ const Features = () => {
       bgColor: 'bg-teal-500',
       titleColor: 'text-white', // Yeşil üstünde beyaz mükemmel okunur
       descColor: 'text-teal-50',
-      image: '/assets/images/screens/frame5.jpg'
+      image: '/assets/images/screens/frame3.jpg'
     }
   ];
 
@@ -303,8 +310,12 @@ const Features = () => {
                         alt={feature.title}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
+                          // 4. DÜZELTME: Type Casting (HTMLElement)
+                          const target = e.target as HTMLElement;
+                          target.style.display = 'none';
+                          if (target.nextSibling) {
+                            (target.nextSibling as HTMLElement).style.display = 'flex';
+                          }
                         }}
                       />
                       <div className={`hidden absolute inset-0 flex-col items-center justify-center p-6 text-center bg-slate-50`}>
