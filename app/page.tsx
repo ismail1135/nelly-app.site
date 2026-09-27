@@ -394,7 +394,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li>
                  
-                  <Link href="@/privacy" className="text-slate-600 hover:text-blue-600 transition-colors flex items-center gap-2">
+                  <Link href="/privacy" className="text-slate-600 hover:text-blue-600 transition-colors flex items-center gap-2">
                     <Shield size={14} /> Gizlilik Politikası
                   </Link>
                 </li>
