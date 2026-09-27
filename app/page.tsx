@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import AppLogo from '../public/assets/images/lsillyapplogo.png';
+import Link from 'next/link';
 
 // İkonlar (Navbar, Footer ve Butonlarda kullanılanlar bırakıldı)
 const Menu = ({ size = 24, className = "" }) => (
@@ -391,7 +392,12 @@ const Footer = () => {
           <div>
             <h4 className="text-slate-900 font-semibold mb-4">Yasal</h4>
             <ul className="space-y-3 text-sm">
-              <li><a id="privacy" href="#" className="text-slate-600 hover:text-blue-600 transition-colors flex items-center gap-2"><Shield size={14} /> Gizlilik Politikası</a></li>
+              <li>
+                 
+                  <Link href="@/privacy" className="text-slate-600 hover:text-blue-600 transition-colors flex items-center gap-2">
+                    <Shield size={14} /> Gizlilik Politikası
+                  </Link>
+                </li>
             </ul>
           </div>
           
