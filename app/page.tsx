@@ -360,10 +360,10 @@ const Footer = () => {
             <a href="https://www.instagram.com/nelly.book.app/" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-pink-600 transition-colors bg-slate-50 hover:bg-pink-50 rounded-full" aria-label="Instagram">
               <Instagram size={20} />
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-slate-900 transition-colors bg-slate-50 hover:bg-slate-200 rounded-full" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@nelly.book.app" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-slate-900 transition-colors bg-slate-50 hover:bg-slate-200 rounded-full" aria-label="TikTok">
               <TikTok size={20} />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-red-600 transition-colors bg-slate-50 hover:bg-red-50 rounded-full" aria-label="YouTube">
+            <a href="https://www.youtube.com/@nelly_app" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-red-600 transition-colors bg-slate-50 hover:bg-red-50 rounded-full" aria-label="YouTube">
               <Youtube size={20} />
             </a>
             <a href="mailto:isot1821@outlook.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors bg-slate-50 hover:bg-blue-50 rounded-full" aria-label="E-posta">
