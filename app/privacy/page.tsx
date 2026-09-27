@@ -45,7 +45,7 @@ export default function PrivacyPage() {
         <p className="text-[15px] text-slate-700 leading-[1.6] mb-8">
           <strong className="font-bold text-slate-900">Uygulama:</strong> Nelly – Okuma Günlüğü ve Kitap Takip Uygulaması<br/>
           <strong className="font-bold text-slate-900">Geliştirici:</strong> Kerevit<br/>
-          <strong className="font-bold text-slate-900">İletişim:</strong> <a href="mailto:ismailaltin1821@gmail.com" className="text-blue-600 font-medium underline decoration-blue-600/50 hover:decoration-blue-600 transition-colors">ismailaltin1821@gmail.com</a><br/>
+          <strong className="font-bold text-slate-900">İletişim:</strong> <a href="mailto:isot1821@outlook.com" className="text-blue-600 font-medium underline decoration-blue-600/50 hover:decoration-blue-600 transition-colors">isot1821@outlook.com</a><br/>
           <strong className="font-bold text-slate-900">Son Güncelleme Tarihi:</strong> 25.08.2026
         </p>
 
@@ -61,7 +61,7 @@ export default function PrivacyPage() {
         <p className="text-[15px] text-slate-700 leading-[1.6] mb-8">
           Bu Uygulama kapsamında kişisel verilerinizin işlenmesi bakımından veri sorumlusu:<br/>
           <strong className="font-bold text-slate-900">Kerevit</strong><br/>
-          ismailaltin1821@gmail.com
+          isot1821@outlook.com
         </p>
 
         <h2 className="text-[22px] font-bold text-slate-900 leading-[1.5] mt-10 mb-4">3. En Önemli İlke: Verileriniz Cihazınızda Kalır</h2>
@@ -164,7 +164,7 @@ export default function PrivacyPage() {
         <h2 className="text-[22px] font-bold text-slate-900 leading-[1.5] mt-10 mb-4">12. İletişim</h2>
         <p className="text-[15px] text-slate-700 leading-[1.6] mb-8">
           Bu politika veya kişisel verilerinizin işlenmesiyle ilgili sorularınız için bize şu adresten ulaşabilirsiniz:<br/>
-          <strong className="font-bold text-slate-900">ismailaltin1821@gmail.com</strong>
+          <strong className="font-bold text-slate-900">isot1821@outlook.com</strong>
         </p>
 
 
@@ -183,7 +183,7 @@ export default function PrivacyPage() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-pink-600 transition-colors bg-slate-50 hover:bg-pink-50 rounded-full"><Instagram size={20} /></a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-slate-900 transition-colors bg-slate-50 hover:bg-slate-200 rounded-full"><TikTok size={20} /></a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-2.5 text-slate-400 hover:text-red-600 transition-colors bg-slate-50 hover:bg-red-50 rounded-full"><Youtube size={20} /></a>
-              <a href="mailto:ismailaltin1821@gmail.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors bg-slate-50 hover:bg-blue-50 rounded-full"><Mail size={20} /></a>
+              <a href="mailto:isot1821@outlook.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors bg-slate-50 hover:bg-blue-50 rounded-full"><Mail size={20} /></a>
             </div>
           </div>
 
@@ -210,7 +210,7 @@ export default function PrivacyPage() {
             <div>
               <h4 className="text-slate-900 font-semibold mb-4">Destek</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="mailto:ismailaltin1821@gmail.com" className="text-slate-600 hover:text-blue-600 transition-colors">İletişim</a></li>
+                <li><a href="mailto:isot1821@outlook.com" className="text-slate-600 hover:text-blue-600 transition-colors">İletişim</a></li>
               </ul>
             </div>
           </div>
